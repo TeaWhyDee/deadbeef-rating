@@ -1,3 +1,9 @@
+**WARNING**
+Apparently this version of the plugin is not compatible
+with anything, to mention: mp3 files - if you set the 
+rating above 5 it automatically rolls back to 5.
+Basically, this fork doesn't work for most files.
+
 # This forks modifications
 * Up to 10 star rating (instead of up to 5).
 * Makefile copied from the AUR package,
