@@ -1,3 +1,6 @@
+# This forks modifications
+Up to 10 star rating (instead of up to 5).
+
 # DeaDBeeF Song Rating plugin
 
 A plugin enabling commands to rate track(s) by writing to the `%rating%` metadata tag. The commands are accessible from the context menu or by binding them to hotkeys. 
