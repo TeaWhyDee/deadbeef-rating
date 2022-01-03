@@ -2,7 +2,7 @@
 * Up to 10 star rating (instead of up to 5).
 * Makefile copied from the AUR package,
   install shell scripts removed because they weren't working for me,
-  more information in [Building & Installing](# building & installing)
+  more information in [Building & Installing](#-building--installing)
 
 
 # DeaDBeeF Song Rating plugin
