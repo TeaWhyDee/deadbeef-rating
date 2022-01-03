@@ -1,5 +1,9 @@
 # This forks modifications
-Up to 10 star rating (instead of up to 5).
+* Up to 10 star rating (instead of up to 5).
+* Makefile copied from the AUR package,
+  install shell scripts removed because they weren't working for me,
+  more information in [#building & installing](#building & installing)
+
 
 # DeaDBeeF Song Rating plugin
 
@@ -9,14 +13,18 @@ Big thanks to [Alexey Yakovenko](https://github.com/Alexey-Yakovenko) for the [D
 
 # Building & Installing
 1. Clone this repository
-2. Download `deadbeef.h`, for example from the [DeaDBeeF source code](http://deadbeef.sourceforge.net/download.html).
-3. Run `sh build.sh [path to dir with deadbeef.h]`
-4. Run `sh easyinstall.sh` to install the plugin to ~/.local/lib/deadbeef, or copy `rating.so` yourself to your DeaDBeeF plugin folder.
+2. Download `deadbeef.h`, for example using `curl https://raw.githubusercontent.com/DeaDBeeF-Player/deadbeef/master/deadbeef.h > deadbeef.h`
+3. Run `make build` to build rating.so.
+4. Run `make install` to install the plugin.
 
 # Uninstalling
-Run `sh easyuninstall.sh` to remove the plugin from ~/.local/lib/deadbeef, or remove `rating.so` yourself from your DeaDBeeF plugin folder.
+Run `make uninstall` to remove the plugin.
 
 # Using
+I personally use the following format:
+`$meta(rating)`
+which displays a number from 0 to 10 (the star rating).
+
 In order to show the rating tags in the playlist, add a new custom column with the following format:
 
 `$ifequal([%rating%], 5, *****,)$ifequal([%rating%], 4, ****,)$ifequal([%rating%], 3, ***,)$ifequal([%rating%], 2, **,)$ifequal([%rating%], 1, *,)`
